@@ -4,6 +4,22 @@
 
 Student: Matheus Oliveira
 
+
+## Installing
+To install all the necessary dependencies of this project, follow the steps above:
+
+* Install [Anaconda](https://www.anaconda.com/download/#linux)
+
+After Anaconda being installed and you've cloned this repo, in your terminal:
+
+```bash
+eval "$(/home/<your_user>/anaconda3/bin/conda shell.bash hook)"
+export PYTHONPATH=$PYTHONPATH:`pwd`/rl4rs
+conda env create -f environment.yml
+conda activate rl4rs
+```
+
+Download the [data](https://drive.google.com/file/d/1YbPtPyYrMvMGOuqD4oHvK0epDtEhEb9v/view), and put it in the root folder of this project after extract it.
 ## Goal
 The goal and the scope of this project is to try to use Reinforcement Learning techiniques to train a Recommendations System giving insights to a user input. The implementation of this model will be using [Recsim](https://github.com/google-research/recsim), a Google-associated framework which abstract part of the underlying configuration of the enviroment (using two sources to train an agent).
 
