@@ -6,22 +6,11 @@ Student: Matheus Oliveira
 
 
 ## Installing
-To install all the necessary dependencies of this project, follow the steps above:
-
-* Install [Anaconda](https://www.anaconda.com/download/#linux)
-
-After Anaconda being installed and you've cloned this repo, in your terminal:
-
 ```bash
-eval "$(/home/<your_user>/anaconda3/bin/conda shell.bash hook)"
-export PYTHONPATH=$PYTHONPATH:`pwd`/rl4rs
-conda env create -f environment.yml
-conda activate rl4rs
+pip install -r requirements.txt
 ```
-
-Download the [data](https://drive.google.com/file/d/1YbPtPyYrMvMGOuqD4oHvK0epDtEhEb9v/view), and put it in the root folder of this project after extract it.
 ## Goal
-The goal and the scope of this project is to try to use Reinforcement Learning techiniques to train a Recommendations System giving insights to a user input. The implementation of this model will be using [Recsim](https://github.com/google-research/recsim), a Google-associated framework which abstract part of the underlying configuration of the enviroment (using two sources to train an agent).
+The goal and the scope of this project is to try to use Reinforcement Learning techiniques to train a Recommendations System giving insights to a user input. The implementation of this model will be using different sources to try to accomplish a RL agent that can Recommend movies based in the Dataset. We're going to use a ML model to compare the results.
 
 ![image](https://github.com/insper-classroom/project-02-matheus-1618/assets/71362534/9832821a-f53b-489a-a082-e37d05a11172)
 
