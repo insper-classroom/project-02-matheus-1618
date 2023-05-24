@@ -10,19 +10,21 @@ Student: Matheus Oliveira
 pip install -r requirements.txt
 ```
 ## Goal
-The goal and the scope of this project is to try to use Reinforcement Learning techiniques to train a Recommendations System giving insights to a user input. The implementation of this model will be using different sources to try to accomplish a RL agent that can Recommend movies based in the Dataset. We're going to use a ML model to compare the results.
+The goal and the scope of this project is to try to use Reinforcement Learning techiniques to train a Recommendations System giving insights to a user input. The implementation of this model will be using different sources to try to accomplish a RL agent that can Recommend movies based in the Dataset. 
 
-![image](https://github.com/insper-classroom/project-02-matheus-1618/assets/71362534/9832821a-f53b-489a-a082-e37d05a11172)
+This is a re-implementation of [RecSys-RL](https://github.com/shashist/recsys-rl) and based on [Feng Liu](https://arxiv.org/pdf/1810.12027.pdf) article.
 
 ## Methods
 The methods expected to accomplish this project are:
-* Study implemented projects and papers using Recsim;
+* Study implemented projects and papers using RL in Recommendation Systems;
 * Replicate enviroments and projects;
-* Use the Gym Wrapper to bring Recsim to a Gym module;
-* Try to train a model using tecniques like Q-Learning, DQN or DDQN;
-* Compare the results against other Recommendatiom systems implementation such as ML;
+* Train the model;
+* Create a python Script to recommend three movies based in three random initial movies picked by random;
+
+This model is using a DDPG model behind Actor-Critic Archictecture.
 
 ## Expected Results 
 The expected results are basically:
-* Implementation of the framework in Gym like enviroment;
-* Comparison in model results and other implementations;
+* Hit and DCG metrics;
+* Python Script to recommend movies due randomic input;
+* Analisys and conclusions about RL for Recsys.
