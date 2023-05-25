@@ -136,9 +136,11 @@ for model, state_representation in zip([ou_policy_net, no_ou_policy_net], [ou_st
 
     predictions.append(preds)
 
+technique = ["-->Without Ornstein-Uhlenbeck process: ","-->With Ornstein-Uhlenbeck process: "]
 print("Movies recommended by agent: ")
-for i in predictions:
+for index,i in enumerate(predictions):
     print()
+    print(technique[index])
     for j in i:
         rec = movies.loc[movies['id'] == int(j[0].numpy())]
-        print('| Movie name: '+" ".join(rec['name'].to_string().split()[1:])+" | Genre: "+" ".join(rec['genre'].to_string().split()[1:])+" |")
+        print('\t| Movie name: '+" ".join(rec['name'].to_string().split()[1:])+" | Genre: "+" ".join(rec['genre'].to_string().split()[1:])+" |")
