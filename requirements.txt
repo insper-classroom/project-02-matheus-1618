@@ -1,0 +1,8 @@
+numpy
+pandas
+pytorch-ranger
+scipy
+torch
+tensorboard
+ipykernel
+tqdm
